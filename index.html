@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+    <title> Clasificación de Imagenes y transferencia de conocimiento</title>
+  </head>
+  <body>
+
+   
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    <div id="console"></div><br>
+    <div id="console2"></div><br>
+    <button id="clase-a" onclick="addExample(1)">Celular</button>
+    <button id="clase-b" onclick="addExample(2)">Audifonos</button>
+    <button id="clase-c" onclick="addExample(3)">Cartera</button>
+    <button id="clase-d" onclick="addExample(4)">Videojuego</button>
+    <button id="clase-e" onclick="addExample(5)" >Pluma</button><br>
+    <!-- Load index.js after the content of the page -->
+    <script src="script.js?v=151"></script>
+  </body>
+</html>
